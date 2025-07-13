@@ -1,0 +1,140 @@
+[
+  {
+    "model": "publisher",
+    "pk": 1,
+    "fields": {
+      "name": "Пушкин"
+    }
+  },
+  {
+    "model": "publisher",
+    "pk": 2,
+    "fields": {
+      "name": "Лев Толстой"
+    }
+  },
+  {
+    "model": "book",
+    "pk": 1,
+    "fields": {
+      "title": "Капитанская дочка",
+      "id_publisher": 1
+    }
+  },
+  {
+    "model": "book",
+    "pk": 2,
+    "fields": {
+      "title": "Евгений Онегин",
+      "id_publisher": 1
+    }
+  },
+  {
+    "model": "book",
+    "pk": 3,
+    "fields": {
+      "title": "Война и мир",
+      "id_publisher": 2
+    }
+  },
+  {
+    "model": "shop",
+    "pk": 1,
+    "fields": {
+      "name": "Буквоед"
+    }
+  },
+  {
+    "model": "shop",
+    "pk": 2,
+    "fields": {
+      "name": "Лабиринт"
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 1,
+    "fields": {
+      "id_book": 1,
+      "id_shop": 1,
+      "count": 10
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 2,
+    "fields": {
+      "id_book": 2,
+      "id_shop": 1,
+      "count": 5
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 3,
+    "fields": {
+      "id_book": 2,
+      "id_shop": 2,
+      "count": 3
+    }
+  },
+  {
+    "model": "stock",
+    "pk": 4,
+    "fields": {
+      "id_book": 3,
+      "id_shop": 2,
+      "count": 4
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 1,
+    "fields": {
+      "price": 600.0,
+      "date_sale": "2022-11-09T00:00:00",
+      "id_stock": 1,
+      "count": 1
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 2,
+    "fields": {
+      "price": 500.0,
+      "date_sale": "2022-11-08T00:00:00",
+      "id_stock": 2,
+      "count": 1
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 3,
+    "fields": {
+      "price": 580.0,
+      "date_sale": "2022-11-05T00:00:00",
+      "id_stock": 3,
+      "count": 1
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 4,
+    "fields": {
+      "price": 490.0,
+      "date_sale": "2022-11-02T00:00:00",
+      "id_stock": 3,
+      "count": 1
+    }
+  },
+  {
+    "model": "sale",
+    "pk": 5,
+    "fields": {
+      "price": 600.0,
+      "date_sale": "2022-10-26T00:00:00",
+      "id_stock": 1,
+      "count": 1
+    }
+  }
+]
